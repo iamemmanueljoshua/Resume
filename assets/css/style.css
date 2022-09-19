@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #c50000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #c50000;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #c50000;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2eafec;
+  background: #c50000;
   color: #fff;
 }
 .back-to-top.active {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #c50000;
   color: #fff;
   text-decoration: none;
 }
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #c50000;
 }
 
 /* Mobile Navigation */
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #c50000;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #c50000;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -261,7 +261,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #fdf5f5;
 }
 
 .section-title {
@@ -273,7 +273,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #6c1717;
 }
 .section-title h2::after {
   content: "";
@@ -281,7 +281,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #c50000;
   bottom: 0;
   left: 0;
 }
@@ -295,7 +295,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #6c1717;
 }
 .about .content ul {
   list-style: none;
@@ -312,7 +312,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #c50000;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -332,7 +332,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #c50000;
   float: left;
   line-height: 0;
 }
@@ -361,7 +361,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #971f1f;
 }
 
 /*--------------------------------------------------------------
@@ -394,7 +394,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #c50000;
 }
 
 /*--------------------------------------------------------------
@@ -410,7 +410,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #971f1f;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -424,7 +424,7 @@ section {
 }
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #f9e4e4;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -448,7 +448,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #971f1f;
 }
 
 /*--------------------------------------------------------------
@@ -479,7 +479,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #c50000;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -525,7 +525,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #c50000;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -557,10 +557,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #c50000;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #c50000;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -606,10 +606,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #c50000;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #c50000;
 }
 .services .icon i {
   color: #fff;
@@ -620,7 +620,7 @@ section {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #c50000;
 }
 .services .title {
   margin-left: 80px;
@@ -632,7 +632,7 @@ section {
   color: #343a40;
 }
 .services .title a:hover {
-  color: #149ddd;
+  color: #c50000;
 }
 .services .description {
   margin-left: 80px;
@@ -712,10 +712,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #c50000;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #c50000;
 }
 
 /*--------------------------------------------------------------
@@ -732,11 +732,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #c50000;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #fcdfdf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -754,7 +754,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #6c1717;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -777,11 +777,11 @@ section {
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #c50000;
   color: #fff;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #c50000;
   color: #fff;
 }
 .contact .php-email-form {
@@ -855,7 +855,7 @@ section {
   padding: 10px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #c50000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
