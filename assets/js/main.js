@@ -39,8 +39,8 @@
   // --- Typed role cycler ---
   var ROLES = [
     'Software Development Engineer @ Amazon',
-    'AI-Driven Threat Detection',
-    'Agentic AI Systems Builder',
+    'Machine Learning Engineer',
+    'Distributed Systems Builder',
     'Published Cybersecurity Researcher',
     'Cybersecurity Awards Judge'
   ];
