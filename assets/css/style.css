@@ -130,7 +130,9 @@ ul { list-style: none; }
 .card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
 .section-alt .card { background: var(--bg-elevated); }
 .card-title { font-family: var(--font-mono); color: var(--accent); font-size: 1.05rem; margin-bottom: 0.5rem; }
+.card-meta { font-family: var(--font-mono); color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.75rem; }
 .card-body { color: var(--text-muted); font-size: 0.95rem; }
+.card-link { display: inline-block; margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.85rem; }
 
 /* ---------- Publications ---------- */
 .pub-list { display: grid; gap: 2rem; }
