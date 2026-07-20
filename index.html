@@ -26,9 +26,10 @@
           <li><a href="#about" class="nav-link">01. about</a></li>
           <li><a href="#experience" class="nav-link">02. experience</a></li>
           <li><a href="#publications" class="nav-link">03. publications</a></li>
-          <li><a href="#press" class="nav-link">04. press</a></li>
-          <li><a href="#focus" class="nav-link">05. focus</a></li>
-          <li><a href="#contact" class="nav-link">06. contact</a></li>
+          <li><a href="#writing" class="nav-link">04. writing</a></li>
+          <li><a href="#press" class="nav-link">05. press</a></li>
+          <li><a href="#focus" class="nav-link">06. focus</a></li>
+          <li><a href="#contact" class="nav-link">07. contact</a></li>
         </ul>
       </div>
     </nav>
@@ -55,13 +56,14 @@
           <img src="assets/img/profile.jpg" alt="Portrait of Emmanuel Joshua" class="about-photo">
           <div>
             <p class="lede">
-              I'm a Software Development Engineer II on Amazon's Defense Security Organization,
-              where I build large-scale, AI-driven threat detection systems that protect cloud
-              infrastructure relied on by businesses, healthcare providers, financial
-              institutions, and government agencies. I'm also finishing a Master's in Computer
-              Science with a concentration in Machine Learning and AI at UT Austin, and I hold a
-              Bachelor's in Computer Science from Texas Southern University's Thomas F. Freeman
-              Honors College.
+              I build software that scales - systems that hold up under real load, not just in
+              a demo. I'm a Software Development Engineer II on Amazon's Defense Security
+              Organization, where I build large-scale, AI-driven threat detection systems that
+              protect cloud infrastructure relied on by businesses, healthcare providers,
+              financial institutions, and government agencies. I'm also finishing a Master's in
+              Computer Science with a concentration in Machine Learning and AI at UT Austin, and
+              I hold a Bachelor's in Computer Science from Texas Southern University's Thomas F.
+              Freeman Honors College.
             </p>
             <p class="lede" style="margin-top: 1.25rem;">
               Cybersecurity is one of those fields where the asymmetry never goes away - an
@@ -72,11 +74,18 @@
               engineers coming up in the field, because the more of us building this well, the
               better it works for everyone.
             </p>
+            <p class="lede" style="margin-top: 1.25rem;">
+              AI is the part I'm leaning hardest into right now. Outside of my day job, I'm
+              designing and building an agentic automation platform - a reusable core (an agent
+              that reasons and acts, a deterministic workflow layer for repeatable patterns, and
+              an integration layer that fronts real tools and services) that new capabilities can
+              plug into instead of each reinventing the same plumbing. It is very much a work in
+              progress, but it is exactly the kind of systems-level thinking I want to spend more
+              of my time on.
+            </p>
             <div class="tag-row">
               <span class="tag">MS Computer Science - ML/AI, UT Austin (in progress)</span>
               <span class="tag">BS Computer Science, Texas Southern University</span>
-              <span class="tag magenta">IEEE Member</span>
-              <span class="tag magenta">ACM / SIGSAC Member</span>
             </div>
           </div>
         </div>
@@ -105,6 +114,15 @@
             <ul class="timeline-list">
               <li>Built the foundational detection, alerting, and automation systems later extended in the SDE II role above.</li>
               <li>Grew security coverage without a proportional increase in cost or staffing by designing for cost and performance from the start.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">Agentic Automation Platform</p>
+            <p class="timeline-org">Independent project</p>
+            <p class="timeline-date">2026 - Present</p>
+            <ul class="timeline-list">
+              <li>Designing a reusable automation core - an LLM-backed agent, a deterministic workflow layer, and an integration layer - that new capabilities build on top of instead of reimplementing.</li>
+              <li>Architecture is written up and being built out incrementally, starting with a single vertical slice end to end before layering in more capabilities.</li>
             </ul>
           </div>
           <div class="timeline-item">
@@ -190,9 +208,62 @@
         </div>
       </div>
     </section>
-    <section id="press" class="section section-alt">
+    <section id="writing" class="section section-alt">
       <div class="container reveal">
-        <p class="section-label">04. press &amp; recognition</p>
+        <p class="section-label">04. writing</p>
+        <div class="section-title"><h2>Writing</h2></div>
+        <p class="lede">
+          I write about the parts of the job that don't make it into a resume - alert fatigue,
+          on-call, and what actually breaks when you scale detection systems. All of it is on
+          <a href="https://medium.com/@iamemmanueljoshua" target="_blank" rel="noopener">Medium</a>.
+        </p>
+        <div class="press-list" style="margin-top: 1.5rem;">
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/backbone-is-good-but-data-earns-trust-765c5aa2a094" target="_blank" rel="noopener">Backbone is good. But data earns trust.</a>
+            <span class="press-source">Jun 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/i-tried-writing-a-detection-and-accidentally-uncovered-my-own-ignorance-01ecd6bb6703" target="_blank" rel="noopener">Writing a Detection Broke My Brain (And Made Me Respect Security Engineers Forever)</a>
+            <span class="press-source">May 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/why-i-built-a-rate-limiter-lessons-from-alert-chaos-c0bf063cc2bd" target="_blank" rel="noopener">Why I Built a Rate Limiter: Lessons From Alert Chaos</a>
+            <span class="press-source">Apr 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/ai-powered-security-a-double-edged-sword-why-automation-alone-cant-stop-cyber-threats-cd6915e7dd55" target="_blank" rel="noopener">AI-Powered Security: A Double-Edged Sword?</a>
+            <span class="press-source">Feb 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/from-noise-to-insight-rethinking-detection-with-veritas-46b562f3c6bb" target="_blank" rel="noopener">From Noise to Insight: Rethinking Detection</a>
+            <span class="press-source">Feb 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/offensive-vs-defensive-security-the-battle-inside-every-tech-company-21fec1339261" target="_blank" rel="noopener">Offensive vs. Defensive Security: The Battle Inside Every Tech Company</a>
+            <span class="press-source">Feb 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/my-on-call-week-from-dreading-it-to-owning-it-8a4baccba19d" target="_blank" rel="noopener">My On-Call Week: From Dreading It to Owning It</a>
+            <span class="press-source">Feb 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/why-batch-and-stream-threat-detection-matters-today-63d0884532eb" target="_blank" rel="noopener">Why Batch and Stream Threat Detection Matters Today</a>
+            <span class="press-source">Feb 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/ai-driven-threat-intelligence-system-aidtis-how-large-language-models-llms-are-transforming-1f1be461df43" target="_blank" rel="noopener">AI-Driven Threat Intelligence System (AIDTIS)</a>
+            <span class="press-source">Jan 2025</span>
+          </div>
+          <div class="press-item">
+            <a href="https://medium.com/@iamemmanueljoshua/cyber-threats-in-the-modern-era-a-deep-dive-into-the-digital-battlefield-d54d4feef483" target="_blank" rel="noopener">Cyber Threats in the Modern Era: A Deep Dive into the Digital Battlefield</a>
+            <span class="press-source">Jan 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="press" class="section">
+      <div class="container reveal">
+        <p class="section-label">05. press &amp; recognition</p>
         <div class="section-title"><h2>Press &amp; Recognition</h2></div>
 
         <blockquote class="quote-block">
@@ -239,11 +310,20 @@
           <span class="tag magenta">Outstanding Undergraduate Student Award, TSU</span>
           <span class="tag magenta">1st Place, NASA Poster Competition</span>
         </div>
+
+        <h3 class="subsection-label">Professional memberships</h3>
+        <div class="tag-row">
+          <span class="tag">IEEE</span>
+          <span class="tag">ACM / SIGSAC</span>
+          <span class="tag">International Association of Engineers (IAENG)</span>
+          <span class="tag magenta">Cloud Security Alliance</span>
+          <span class="tag magenta">National Society of Black Engineers (NSBE)</span>
+        </div>
       </div>
     </section>
-    <section id="focus" class="section">
+    <section id="focus" class="section section-alt">
       <div class="container reveal">
-        <p class="section-label">05. focus areas</p>
+        <p class="section-label">06. focus areas</p>
         <div class="section-title"><h2>What I work on</h2></div>
         <div class="card-grid">
           <div class="card">
@@ -262,12 +342,16 @@
             <p class="card-title">Mentorship &amp; Knowledge Sharing</p>
             <p class="card-body">Writing, judging, and mentoring to help the next generation of security engineers get up to speed faster.</p>
           </div>
+          <div class="card">
+            <p class="card-title">Agentic AI &amp; Automation</p>
+            <p class="card-body">Designing agent-driven automation - systems that reason, act, and hand off to deterministic workflows when a pattern earns that trust.</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="container reveal">
-        <p class="section-label">06. contact</p>
+        <p class="section-label">07. contact</p>
         <div class="section-title"><h2>Get in touch</h2></div>
         <p class="lede">
           Best reached by email. I'm always glad to talk security, research, or interesting problems.
