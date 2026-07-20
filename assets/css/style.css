@@ -12,6 +12,7 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 6px;
   --transition: 200ms ease;
+  --bg-rgb: 10, 14, 15;
 }
 
 :root[data-theme="light"] {
@@ -23,6 +24,7 @@
   --accent: #1a9d53;
   --accent-amber: #b3790a;
   --accent-magenta: #b1348f;
+  --bg-rgb: 247, 249, 250;
 }
 
 /* ---------- Reset ---------- */
@@ -50,12 +52,12 @@ ul { list-style: none; }
 /* ---------- Header / Nav ---------- */
 #header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(10, 14, 15, 0.9);
+  background: rgba(var(--bg-rgb), 0.9);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
 }
 .navbar-inner {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; gap: 2rem;
   height: 64px;
 }
 .logo {
@@ -79,7 +81,7 @@ ul { list-style: none; }
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
-.navbar-actions { display: flex; align-items: center; gap: 0.75rem; }
+.navbar-actions { display: flex; align-items: center; gap: 0.75rem; margin-left: auto; }
 .theme-toggle {
   background: none; border: 1px solid var(--border); border-radius: var(--radius);
   color: var(--text-muted); cursor: pointer; padding: 0.35rem 0.55rem; font-size: 1rem;
