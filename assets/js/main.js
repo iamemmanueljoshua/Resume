@@ -3,6 +3,23 @@
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // --- Light/dark theme toggle ---
+  var THEME_KEY = 'theme';
+  var themeToggle = document.getElementById('theme-toggle');
+  var storedTheme = null;
+  try { storedTheme = localStorage.getItem(THEME_KEY); } catch (e) { storedTheme = null; }
+  var systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  var initialTheme = storedTheme || (systemPrefersLight ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', initialTheme);
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* ignore */ }
+    });
+  }
+
   // --- Mobile nav toggle ---
   var navToggle = document.getElementById('nav-toggle');
   var navMenu = document.getElementById('nav-menu');
