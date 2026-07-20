@@ -51,10 +51,10 @@ ul { list-style: none; }
   font-family: var(--font-mono); font-weight: 700; color: var(--text); font-size: 1.1rem;
 }
 .logo:hover { text-decoration: none; color: var(--accent); }
-.nav-menu { display: flex; gap: 1.5rem; }
+.nav-menu { display: flex; gap: 1.25rem; }
 .nav-link {
-  font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);
-  transition: color var(--transition);
+  font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);
+  transition: color var(--transition); white-space: nowrap;
 }
 .nav-link:hover, .nav-link.active { color: var(--accent); text-decoration: none; }
 .nav-toggle {
@@ -63,7 +63,7 @@ ul { list-style: none; }
 }
 .nav-toggle span { width: 22px; height: 2px; background: var(--text); }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-toggle { display: flex; }
   .nav-menu {
     position: absolute; top: 64px; left: 0; right: 0; flex-direction: column;
@@ -71,6 +71,7 @@ ul { list-style: none; }
     padding: 1rem 1.5rem; gap: 1rem; display: none;
   }
   .nav-menu.open { display: flex; }
+  .nav-link { white-space: normal; }
 }
 
 /* ---------- Hero ---------- */
