@@ -18,7 +18,7 @@ fi
 failed=0
 while IFS= read -r url; do
   status=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 15 "$url")
-  if [[ "$status" =~ ^[45] ]]; then
+  if [[ ! "$status" =~ ^[23] ]]; then
     echo "BROKEN LINK ($status): $url"
     failed=1
   else
