@@ -13,8 +13,12 @@
     var height = 0;
     var running = true;
 
-    var PARTICLE_COLOR = '67, 233, 123';
+    var PARTICLE_COLOR = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || '67, 233, 123';
     var LINK_DISTANCE = 130;
+
+    new MutationObserver(function () {
+      PARTICLE_COLOR = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || PARTICLE_COLOR;
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
     function particleCount() {
       var area = width * height;

@@ -8,8 +8,7 @@
   var themeToggle = document.getElementById('theme-toggle');
   var storedTheme = null;
   try { storedTheme = localStorage.getItem(THEME_KEY); } catch (e) { storedTheme = null; }
-  var systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  var initialTheme = storedTheme || (systemPrefersLight ? 'light' : 'dark');
+  var initialTheme = storedTheme || 'dark';
   document.documentElement.setAttribute('data-theme', initialTheme);
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
