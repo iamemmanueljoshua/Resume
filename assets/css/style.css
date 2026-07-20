@@ -212,32 +212,20 @@ ul { list-style: none; }
   #cursor-glow { display: none; }
 }
 
-/* ---------- About: keep paragraph 1 at least as tall as the floated photo ---------- */
-/* Prevents a gap before paragraph 2 (which clears the float) if paragraph 1's
-   text is short enough to wrap to fewer lines than the photo is tall. */
-#about .lede:first-of-type { min-height: 220px; }
-@media (max-width: 600px) {
-  #about .lede:first-of-type { min-height: 130px; }
-}
-@media (max-width: 400px) {
-  #about .lede:first-of-type { min-height: 100px; }
-}
-
-/* ---------- About photo (floats beside the opening text) ---------- */
+/* ---------- About layout (photo + text as two grid columns) ---------- */
+.about-layout { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; }
 .about-photo {
-  float: left;
-  width: 180px;
+  width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  margin: 0.35rem 2rem 1rem 0;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 @media (max-width: 600px) {
-  .about-photo { width: 110px; margin: 0.25rem 1rem 0.75rem 0; }
+  .about-layout { grid-template-columns: 110px 1fr; gap: 1rem; }
 }
 @media (max-width: 400px) {
-  .about-photo { width: 84px; margin: 0.25rem 0.75rem 0.5rem 0; }
+  .about-layout { grid-template-columns: 84px 1fr; gap: 0.75rem; }
 }
 
 /* ---------- About stat row ---------- */
