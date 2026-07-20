@@ -223,7 +223,10 @@ ul { list-style: none; }
   border: 1px solid var(--border);
 }
 @media (max-width: 600px) {
-  .about-photo { float: none; display: block; width: 160px; margin: 0 auto 1.5rem; }
+  .about-photo { width: 110px; margin: 0.25rem 1rem 0.75rem 0; }
+}
+@media (max-width: 400px) {
+  .about-photo { width: 84px; margin: 0.25rem 0.75rem 0.5rem 0; }
 }
 
 /* ---------- About stat row ---------- */
