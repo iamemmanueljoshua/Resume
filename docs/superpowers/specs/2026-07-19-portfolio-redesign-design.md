@@ -94,6 +94,16 @@ Content is sourced from, in priority order:
 Dropped entirely from the current site: fake-sounding testimonials, generic freelance
 services list, Twitter/Instagram links, phone number, Google Maps embed.
 
+### Profile photo
+
+The existing `assets/img/author2.jpg` / `144.png` (same photo, two crops) was uploaded
+March 2022 and shows Emmanuel in a Texas Southern University Honors College-branded
+blazer - over 4 years old and visually tied to a university affiliation that no longer
+represents his current identity. Replaced with a current headshot (`IMG_9972.jpg`,
+provided directly) - plain black background, dark clothing, neutral/direct expression -
+which fits the near-black terminal visual system well. Used for the hero/about section;
+the old photo files are removed.
+
 ### Resume PDF
 
 The existing `Previous EB2 Application 1/.../Resume.pdf` is real and matches Emmanuel, but
