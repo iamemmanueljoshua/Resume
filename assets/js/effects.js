@@ -15,7 +15,7 @@
     var running = true;
 
     var PARTICLE_COLOR = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || '67, 233, 123';
-    var LINK_DISTANCE = 160;
+    var LINK_DISTANCE = 130;
 
     new MutationObserver(function () {
       PARTICLE_COLOR = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || PARTICLE_COLOR;
@@ -24,7 +24,7 @@
     function particleCount() {
       var area = width * height;
       var count = Math.round(area / 18000);
-      return Math.max(45, Math.min(count, 110));
+      return Math.max(28, Math.min(count, 75));
     }
 
     function makeParticle() {
@@ -67,8 +67,8 @@
         }
 
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 2.4, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(' + PARTICLE_COLOR + ', 0.9)';
+        ctx.arc(p.x, p.y, 1.8, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + PARTICLE_COLOR + ', 0.6)';
         ctx.fill();
       }
 
@@ -81,8 +81,8 @@
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
-            ctx.strokeStyle = 'rgba(' + PARTICLE_COLOR + ', ' + (0.3 * (1 - dist / LINK_DISTANCE)) + ')';
-            ctx.lineWidth = 1.2;
+            ctx.strokeStyle = 'rgba(' + PARTICLE_COLOR + ', ' + (0.2 * (1 - dist / LINK_DISTANCE)) + ')';
+            ctx.lineWidth = 1;
             ctx.stroke();
           }
         }
