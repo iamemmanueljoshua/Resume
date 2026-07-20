@@ -212,20 +212,24 @@ ul { list-style: none; }
   #cursor-glow { display: none; }
 }
 
-/* ---------- About layout (photo + text as two grid columns) ---------- */
-.about-layout { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; }
+/* ---------- About layout (photo floats, text wraps beside then under it) ---------- */
+/* flow-root gives this wrapper its own block formatting context, so it
+   properly contains the floated photo's height - no clearfix hacks needed. */
+.about-flow { display: flow-root; }
 .about-photo {
-  width: 100%;
+  float: left;
+  width: 200px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  margin: 0.35rem 2rem 1rem 0;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 @media (max-width: 600px) {
-  .about-layout { grid-template-columns: 110px 1fr; gap: 1rem; }
+  .about-photo { width: 110px; margin: 0.25rem 1rem 0.75rem 0; }
 }
 @media (max-width: 400px) {
-  .about-layout { grid-template-columns: 84px 1fr; gap: 0.75rem; }
+  .about-photo { width: 84px; margin: 0.25rem 0.75rem 0.5rem 0; }
 }
 
 /* ---------- About stat row ---------- */
