@@ -23,7 +23,7 @@
     function particleCount() {
       var area = width * height;
       var count = Math.round(area / 18000);
-      return Math.max(20, Math.min(count, 90));
+      return Math.max(30, Math.min(count, 90));
     }
 
     function makeParticle() {
@@ -65,7 +65,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.6, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(' + PARTICLE_COLOR + ', 0.55)';
+        ctx.fillStyle = 'rgba(' + PARTICLE_COLOR + ', 0.7)';
         ctx.fill();
       }
 
@@ -78,7 +78,7 @@
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
-            ctx.strokeStyle = 'rgba(' + PARTICLE_COLOR + ', ' + (0.12 * (1 - dist / LINK_DISTANCE)) + ')';
+            ctx.strokeStyle = 'rgba(' + PARTICLE_COLOR + ', ' + (0.18 * (1 - dist / LINK_DISTANCE)) + ')';
             ctx.lineWidth = 1;
             ctx.stroke();
           }
