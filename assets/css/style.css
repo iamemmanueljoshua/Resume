@@ -185,7 +185,7 @@ ul { list-style: none; }
   border-radius: 50%; background: var(--accent);
 }
 .section-alt .timeline-item::before { box-shadow: 0 0 0 3px var(--bg-elevated), 0 0 10px rgba(var(--particle-rgb), 0.5); }
-.timeline-role { font-size: 1.15rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; }
+.timeline-role { font-size: 1.15rem; font-weight: 600; display: inline-flex; align-items: center; flex-wrap: wrap; gap: 0.6rem; row-gap: 0.3rem; }
 .timeline-current {
   font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em;
   color: var(--bg); background: var(--accent); border-radius: 999px; padding: 0.15rem 0.5rem;
