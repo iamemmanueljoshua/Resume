@@ -28,7 +28,7 @@ img { max-width: 100%; display: block; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 ul { list-style: none; }
-.container { max-width: 1320px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 1320px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 4rem); }
 
 .skip-link {
   position: absolute; left: -999px; top: 0; background: var(--accent); color: var(--bg);
@@ -77,14 +77,14 @@ ul { list-style: none; }
 .hero { min-height: 90vh; display: flex; align-items: center; }
 .hero-content { text-align: left; }
 .prompt {
-  font-family: var(--font-mono); color: var(--accent); font-size: 0.9rem; margin-bottom: 0.75rem;
+  font-family: var(--font-mono); color: var(--accent); font-size: clamp(1rem, 1.5vw, 1.15rem); margin-bottom: 1rem;
 }
-.hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; }
+.hero h1 { font-size: clamp(3.5rem, 9vw, 6.5rem); font-weight: 700; line-height: 1.05; }
 .cursor { color: var(--accent); animation: blink 1s step-end infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .hero-role {
-  font-family: var(--font-mono); font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  color: var(--text-muted); margin-top: 1rem; min-height: 2rem;
+  font-family: var(--font-mono); font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--text-muted); margin-top: 1.5rem; min-height: 2.5rem;
 }
 .typed-role { color: var(--accent-amber); }
 .hero-actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
