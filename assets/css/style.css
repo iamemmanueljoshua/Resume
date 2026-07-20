@@ -108,7 +108,7 @@ ul { list-style: none; }
 }
 .section-title { margin-bottom: 2.5rem; }
 .section-title h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: 0.5rem; }
-.lede { color: var(--text-muted); max-width: 85ch; margin-top: 1rem; }
+.lede { color: var(--text-muted); max-width: 100ch; margin-top: 1rem; }
 
 /* ---------- Timeline (Experience) ---------- */
 .timeline { border-left: 2px solid var(--border); padding-left: 2rem; display: grid; gap: 3rem; }
@@ -210,9 +210,6 @@ ul { list-style: none; }
 @media (hover: none), (pointer: coarse) {
   #cursor-glow { display: none; }
 }
-
-/* ---------- About content column (narrower than the full container, centered) ---------- */
-#about .container { max-width: 900px; }
 
 /* ---------- About photo (floats beside the opening text) ---------- */
 .about-photo {
