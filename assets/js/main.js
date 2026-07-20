@@ -38,7 +38,7 @@
 
   // --- Typed role cycler ---
   var ROLES = [
-    'Security Engineer @ Amazon',
+    'Software Development Engineer @ Amazon',
     'AI-Driven Threat Detection',
     'Published Cybersecurity Researcher',
     'Cybersecurity Awards Judge'
