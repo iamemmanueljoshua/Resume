@@ -109,7 +109,7 @@ ul { list-style: none; }
 }
 .section-title { margin-bottom: 2.5rem; }
 .section-title h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: 0.5rem; }
-.lede { color: var(--text-muted); text-align: justify; text-justify: inter-word; margin-top: 1rem; }
+.lede { color: var(--text-muted); text-align: justify; text-justify: inter-word; max-width: 90ch; margin-top: 1rem; }
 
 /* ---------- Timeline (Experience) ---------- */
 .timeline { border-left: 2px solid var(--border); padding-left: 2rem; display: grid; gap: 3rem; }
@@ -210,6 +210,17 @@ ul { list-style: none; }
 
 @media (hover: none), (pointer: coarse) {
   #cursor-glow { display: none; }
+}
+
+/* ---------- About: keep paragraph 1 at least as tall as the floated photo ---------- */
+/* Prevents a gap before paragraph 2 (which clears the float) if paragraph 1's
+   text is short enough to wrap to fewer lines than the photo is tall. */
+#about .lede:first-of-type { min-height: 220px; }
+@media (max-width: 600px) {
+  #about .lede:first-of-type { min-height: 130px; }
+}
+@media (max-width: 400px) {
+  #about .lede:first-of-type { min-height: 100px; }
 }
 
 /* ---------- About photo (floats beside the opening text) ---------- */
