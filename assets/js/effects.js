@@ -2,9 +2,10 @@
   'use strict';
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) return;
 
   // --- Floating particle network background ---
+  // Reduced motion means "don't animate it," not "don't show it" - a static
+  // frame is drawn either way, only the drift/redraw loop is skipped.
   var canvas = document.getElementById('bg-particles');
   if (canvas && 'requestAnimationFrame' in window) {
     var ctx = canvas.getContext('2d');
@@ -58,10 +59,12 @@
 
       for (var i = 0; i < particles.length; i++) {
         var p = particles[i];
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > width) p.vx *= -1;
-        if (p.y < 0 || p.y > height) p.vy *= -1;
+        if (!reduceMotion) {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0 || p.x > width) p.vx *= -1;
+          if (p.y < 0 || p.y > height) p.vy *= -1;
+        }
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, 2.4, 0, Math.PI * 2);
@@ -85,22 +88,27 @@
         }
       }
 
-      if (running) requestAnimationFrame(step);
+      if (running && !reduceMotion) requestAnimationFrame(step);
     }
 
     var resizeTimer;
     window.addEventListener('resize', function () {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(resize, 150);
+      if (reduceMotion) step();
     });
 
     document.addEventListener('visibilitychange', function () {
       running = !document.hidden;
-      if (running) requestAnimationFrame(step);
+      if (running && !reduceMotion) requestAnimationFrame(step);
     });
 
     resize();
-    requestAnimationFrame(step);
+    if (reduceMotion) {
+      step();
+    } else {
+      requestAnimationFrame(step);
+    }
   }
 
   // --- Cursor-follow glow ---

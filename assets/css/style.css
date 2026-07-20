@@ -245,7 +245,7 @@ ul { list-style: none; }
   html { scroll-behavior: auto; }
   .cursor { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  #bg-particles, #cursor-glow { display: none; }
+  #cursor-glow { display: none; }
 }
 
 /* ---------- Ambient background effects ---------- */
