@@ -55,10 +55,19 @@ ul { list-style: none; }
 .logo-mark {
   color: var(--accent); font-weight: 700; border: 1px solid var(--border);
   border-radius: var(--radius); padding: 0.15rem 0.4rem; font-size: 0.95rem;
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  text-shadow: 0 0 12px rgba(67, 233, 123, 0.35);
 }
-.logo:hover .logo-mark { border-color: var(--accent); }
-.logo-mark .logo-e { color: var(--text); }
+.logo:hover .logo-mark {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(67, 233, 123, 0.25);
+}
+.logo-mark .logo-e {
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent-amber));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
 .nav-menu { display: flex; gap: 1.25rem; }
 .nav-link {
   font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);
