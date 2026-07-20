@@ -211,20 +211,18 @@ ul { list-style: none; }
   #cursor-glow { display: none; }
 }
 
-/* ---------- About Layout with Photo ---------- */
-.about-layout { display: grid; grid-template-columns: 200px 1fr; gap: 2.5rem; align-items: start; }
+/* ---------- About photo (floats beside the opening text) ---------- */
 .about-photo {
-  width: 100%;
+  float: left;
+  width: 180px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  margin: 0.35rem 2rem 1rem 0;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  position: sticky;
-  top: 88px;
 }
-@media (max-width: 700px) {
-  .about-layout { grid-template-columns: 1fr; }
-  .about-photo { max-width: 240px; aspect-ratio: 4 / 5; position: static; }
+@media (max-width: 600px) {
+  .about-photo { float: none; display: block; width: 160px; margin: 0 auto 1.5rem; }
 }
 
 /* ---------- About stat row ---------- */
