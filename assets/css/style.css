@@ -156,6 +156,7 @@ ul { list-style: none; }
 .press-list { display: grid; gap: 1rem; margin-top: 1.5rem; }
 .press-item { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
 .press-item .press-source { font-family: var(--font-mono); color: var(--text-muted); font-size: 0.85rem; }
+.subsection-label { margin-top: 2.5rem; font-family: var(--font-mono); font-size: 1rem; color: var(--text-muted); }
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
