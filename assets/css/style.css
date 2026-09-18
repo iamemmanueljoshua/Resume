@@ -181,15 +181,20 @@ ul { list-style: none; }
 }
 .hero-actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
 @media (max-width: 600px) {
-  .hero { min-height: 80vh; }
+  .hero { min-height: calc(100svh - 64px); }
   .hero::after {
     background:
-      linear-gradient(90deg, rgba(10, 14, 21, 0.96) 0%, rgba(10, 14, 21, 0.84) 100%),
-      linear-gradient(0deg, rgba(10, 14, 21, 0.92) 0%, transparent 45%);
+      linear-gradient(90deg, rgba(10, 14, 21, 0.82) 0%, rgba(10, 14, 21, 0.62) 62%, rgba(10, 14, 21, 0.46) 100%),
+      linear-gradient(0deg, rgba(10, 14, 21, 0.74) 0%, transparent 48%);
   }
-  .hero-media { object-position: 64% center; opacity: 0.48; }
+  .hero-media {
+    object-position: 64% center;
+    opacity: 0.78;
+    filter: brightness(1.08) saturate(1.02);
+  }
   .hero h1 { font-size: clamp(2.25rem, 11vw, 3.25rem); }
   .hero-role { font-size: clamp(1rem, 4.5vw, 1.2rem); min-height: 1.6rem; }
+  .hero-summary { color: #c8d0d6; line-height: 1.65; }
   .hero-actions { flex-wrap: wrap; gap: 0.6rem; }
   .hero-actions .btn {
     flex: 1 1 calc(50% - 0.6rem); text-align: center; padding: 0.65rem 0.5rem;
@@ -223,7 +228,7 @@ ul { list-style: none; }
 }
 .section-title { margin-bottom: 2.5rem; }
 .section-title h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: 0.5rem; }
-.lede { color: var(--text-muted); text-align: justify; text-justify: inter-word; margin-top: 1rem; }
+.lede { color: var(--text-muted); text-align: left; margin-top: 1rem; }
 .section-intro { max-width: 880px; margin-top: -1.25rem; margin-bottom: 2rem; text-align: left; }
 
 /* ---------- Timeline (Experience) ---------- */
@@ -374,10 +379,25 @@ a.card:hover { text-decoration: none; }
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
 }
 @media (max-width: 600px) {
-  .about-photo { width: 110px; margin: 0.25rem 1rem 0.75rem 0; }
+  .section { padding: 4.5rem 0; }
+  .section-title { margin-bottom: 1.75rem; }
+  .about-flow { display: block; }
+  .about-photo {
+    float: none;
+    width: min(100%, 260px);
+    margin: 0 auto 1.5rem;
+    border-radius: 12px;
+  }
+  .about-flow .lede {
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+  :root:not([data-theme="light"]) .about-flow .lede { color: #c3cbd1; }
 }
 @media (max-width: 400px) {
-  .about-photo { width: 84px; margin: 0.25rem 0.75rem 0.5rem 0; }
+  .about-photo { width: min(100%, 240px); }
 }
 
 /* ---------- About stat row ---------- */
