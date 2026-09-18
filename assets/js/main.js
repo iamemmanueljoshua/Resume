@@ -54,11 +54,11 @@
 
   // --- Typed role cycler ---
   var ROLES = [
-    'Software Development Engineer @ Amazon',
-    'Machine Learning Engineer',
-    'Distributed Systems Builder',
-    'Published Cybersecurity Researcher',
-    'Cybersecurity Awards Judge'
+    'Software Engineer @ Amazon',
+    'AI Products Builder',
+    'Agentic Systems Builder',
+    'Full-Stack Developer',
+    'Distributed Systems Builder'
   ];
   var typedEl = document.getElementById('typed-role');
   if (typedEl) {
