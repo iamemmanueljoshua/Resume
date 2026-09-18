@@ -22,7 +22,7 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" as="image" href="assets/img/emmanuel-hero.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="assets/css/style.css?v=20260918-2" rel="stylesheet">
+  <link href="assets/css/style.css?v=20260918-3" rel="stylesheet">
 </head>
 <body>
   <canvas id="bg-particles" aria-hidden="true"></canvas>
@@ -69,11 +69,13 @@
       >
       <div class="container hero-content">
         <p class="prompt">emmanuel@dev:~$ whoami</p>
-        <h1>I'm Emmanuel<span class="cursor">_</span></h1>
-        <p class="hero-role">A <span id="typed-role" class="typed-role"></span></p>
+        <p class="mobile-eyebrow">Software Engineer <span aria-hidden="true">&middot;</span> AI Builder</p>
+        <h1><span class="desktop-intro">I'm </span>Emmanuel<span class="mobile-surname"> Joshua</span><span class="cursor">_</span></h1>
+        <p class="hero-role hero-role-desktop">A <span id="typed-role" class="typed-role"></span></p>
+        <p class="hero-role-mobile">Software Engineer building production-ready AI products.</p>
         <p class="hero-summary">
-          I build production-minded AI products, agentic workflows, backend services, and full-stack
-          systems that are useful beyond the demo.
+          <span class="hero-summary-desktop">I build production-minded AI products, agentic workflows, backend services, and full-stack systems that are useful beyond the demo.</span>
+          <span class="hero-summary-mobile">Full-stack products, agentic workflows, and reliable cloud systems&mdash;built to work beyond the demo.</span>
         </p>
         <div class="hero-proof" aria-label="Core strengths">
           <span>AI products</span>
@@ -82,8 +84,8 @@
           <span>AWS backend systems</span>
         </div>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">See my work</a>
-          <a href="https://echofocus.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost">Try EchoFocus</a>
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="https://echofocus.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost hero-echo-cta">Try EchoFocus</a>
           <a href="#contact" class="btn btn-ghost">Contact</a>
         </div>
       </div>
@@ -104,27 +106,21 @@
             decoding="async"
           >
           <p class="lede">
-            I'm a Software Development Engineer II at Amazon, where I build high-availability AWS
-            applications, backend services, data workflows, and operational tooling for large-scale
-            investigation and response systems. The domain is security; my core discipline is
-            software engineering: performance, reliability, observability, automation, and systems
-            that teams can operate with confidence.
+            I'm a Software Development Engineer II at Amazon, building high-availability AWS
+            applications, backend services, data workflows, and operational tooling. Security is
+            the domain; software engineering&mdash;performance, reliability, observability, and
+            automation&mdash;is the core discipline.
           </p>
-          <p class="lede" style="margin-top: 1.25rem;">
-            My current focus is AI engineering. I build AI-powered products and agentic workflows,
-            alongside the full-stack software that makes them useful. EchoFocus is my clearest
-            example right now: a live full-stack AI product that turns text, files, photos, and live
-            recordings into an audio-first experience with synchronized transcripts, AI summaries,
-            and searchable history. I am also building a reusable agentic automation platform that
-            combines LLM-backed reasoning, deterministic workflows, and integrations with external
-            tools and services.
+          <p class="lede about-paragraph">
+            My current focus is AI engineering: production-ready AI products and agentic workflows,
+            supported by the full-stack software that makes them useful. EchoFocus turns text,
+            files, photos, and live recordings into synchronized audio, transcripts, summaries,
+            and searchable history.
           </p>
-          <p class="lede" style="margin-top: 1.25rem;">
-            My research and writing have used security as a practical domain for AI, automation,
-            data processing, and distributed systems. I am pursuing an MS in Computer Science at
-            UT Austin with a focus on Machine Learning and AI, and I am most interested in the
-            engineering work required to make intelligent software reliable, observable, and useful
-            in production.
+          <p class="lede about-paragraph">
+            I'm completing an MS in Computer Science at UT Austin with a Machine Learning and AI
+            focus. I'm most interested in the engineering that makes intelligent software reliable,
+            observable, and useful in production.
           </p>
           <div class="tag-row">
             <span class="tag">MS Computer Science - ML/AI, UT Austin (in progress)</span>
@@ -226,6 +222,15 @@
         </p>
         <div class="card-grid project-grid">
           <a class="card project-card featured-project" href="https://echofocus.vercel.app" target="_blank" rel="noopener" aria-label="Try EchoFocus">
+            <img
+              src="assets/img/echofocus-feature.jpg"
+              alt="EchoFocus audio-first AI product interface"
+              class="project-image"
+              width="1200"
+              height="627"
+              loading="lazy"
+              decoding="async"
+            >
             <span class="card-eyebrow">Featured live product</span>
             <p class="card-title">EchoFocus</p>
             <p class="card-meta">Full-stack AI product - live at echofocus.vercel.app</p>
