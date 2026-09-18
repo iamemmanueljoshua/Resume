@@ -26,12 +26,22 @@
     navToggle.addEventListener('click', function () {
       var isOpen = navMenu.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('nav-open', isOpen);
     });
     navMenu.querySelectorAll('.nav-link').forEach(function (link) {
       link.addEventListener('click', function () {
         navMenu.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
       });
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+        navToggle.focus();
+      }
     });
   }
 
@@ -62,7 +72,7 @@
   ];
   var typedEl = document.getElementById('typed-role');
   if (typedEl) {
-    if (reduceMotion) {
+    if (reduceMotion || window.matchMedia('(max-width: 600px)').matches) {
       typedEl.textContent = ROLES[0];
     } else {
       (function typeLoop() {
