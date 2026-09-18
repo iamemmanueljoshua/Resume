@@ -365,6 +365,7 @@ a.card:hover { text-decoration: none; }
 .about-photo {
   float: left;
   width: 200px;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   margin: 0.35rem 2rem 1rem 0;
