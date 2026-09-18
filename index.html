@@ -20,9 +20,10 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="preload" as="image" href="assets/img/emmanuel-hero.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/emmanuel-hero.webp" media="(min-width: 601px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/emmanuel-hero-mobile.webp" media="(max-width: 600px)" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="assets/css/style.css?v=20260918-4" rel="stylesheet">
+  <link href="assets/css/style.css?v=20260918-5" rel="stylesheet">
 </head>
 <body>
   <canvas id="bg-particles" aria-hidden="true"></canvas>
@@ -59,14 +60,18 @@
 
   <main id="main">
     <section id="hero" class="hero">
-      <img
-        src="assets/img/emmanuel-hero.webp"
-        alt="Emmanuel Joshua in a modern workspace"
-        class="hero-media"
-        width="1672"
-        height="941"
-        fetchpriority="high"
-      >
+      <picture class="hero-picture">
+        <source media="(max-width: 600px)" srcset="assets/img/emmanuel-hero-mobile.webp">
+        <img
+          src="assets/img/emmanuel-hero.webp"
+          alt="Emmanuel Joshua in a modern workspace"
+          class="hero-media"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </picture>
       <div class="container hero-content">
         <p class="prompt">emmanuel@dev:~$ whoami</p>
         <p class="mobile-eyebrow">Software Engineer <span aria-hidden="true">&middot;</span> AI Builder</p>
@@ -98,10 +103,12 @@
         <div class="about-flow">
           <img
             src="assets/img/emmanuel-about.webp"
+            srcset="assets/img/emmanuel-about-800.webp 800w, assets/img/emmanuel-about.webp 1600w"
+            sizes="(max-width: 600px) calc(100vw - 2.5rem), 200px"
             alt="Emmanuel Joshua, software engineer and AI product builder"
             class="about-photo"
-            width="1000"
-            height="1250"
+            width="1600"
+            height="2000"
             loading="lazy"
             decoding="async"
           >
