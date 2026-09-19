@@ -267,7 +267,8 @@ ul { list-style: none; }
   .section-title h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
   .timeline-role { font-size: 1rem; }
   .card-title { font-size: 0.95rem; }
-  .pub-title { font-size: 1rem; }
+min-height: calc(100svh - 56px);
+    min-height: min(760px, calc(100svh - 56px));
   .stat-value { font-size: 1.4rem; }
 }
 
