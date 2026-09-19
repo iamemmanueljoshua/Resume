@@ -203,11 +203,13 @@ ul { list-style: none; }
     --bg-rgb: 17, 24, 27;
   }
   .navbar-inner { height: 56px; }
-  .nav-menu { top: 56px; max-height: calc(100svh - 56px); }
-  .hero {
+        .nav-menu { top: 56px; max-height: calc(100svh - 56px); }
+      min-height: 720px;
+    display: block;
     min-height: calc(100svh - 56px);
     align-items: flex-end;
-    padding: 3rem 0 2.5rem;
+        min-height: 720px;
+    display: block;
   }
   .hero::after {
     background:
